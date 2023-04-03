@@ -22,19 +22,27 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
 .nav-item{
-  color: #8a4199c0;
-  font-family: cursive;
+  color: #cc90cc;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .nav-item:hover {
-  color: #D9AFD9;
+  color:  #8a4199c0;
   cursor: pointer;
 }
 
 .component-container{
-  padding-left: 15px;
-  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 75vh;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 1px 1px opacity;
 }
 
 .logo{
