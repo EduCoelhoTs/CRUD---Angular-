@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CreateCompanyRoutingModule } from './create-company-routing.module';
 import { CreateCompanyComponent } from './create-company.component';
+import { DirectivesModule } from 'src/app/shared/common/directives/directives.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CreateCompanyComponent } from './create-company.component';
   ],
   imports: [
     CommonModule,
-    CreateCompanyRoutingModule
+    CreateCompanyRoutingModule,
+    DirectivesModule
   ]
 })
 export class CreateCompanyModule { }
