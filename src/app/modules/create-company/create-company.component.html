@@ -1,9 +1,8 @@
-<main class="main-company">
-  <h2 class="company-title">Cadastrar empresa</h2>
-
-  <input type="text" class="input-class" edInput (keyup)="checkValue($event)">
-
-  <ul>
-    <li *ngFor="let item of newData || data">{{ item }}</li>
-  </ul>
+<main class="component-container">
+  <ng-container class="main-company">
+    <h2 class="company-title">Cadastrar empresa</h2>
+  </ng-container>
+  <div class="input-container">
+    <input type="text" CustonInput />
+  </div>
 </main>

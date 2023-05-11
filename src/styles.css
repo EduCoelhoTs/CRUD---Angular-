@@ -8,3 +8,9 @@ body {
   margin: 0;
 }
 
+.custom-input{
+  border: #cbcbcb;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
