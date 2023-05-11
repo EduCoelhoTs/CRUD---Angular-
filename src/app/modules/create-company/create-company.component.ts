@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-create-company',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateCompanyComponent implements OnInit {
 
+  data: any[] = [
+    'Pedro', 'Carlos', 'Tiago', 'Eduardo'
+  ]
+
+  newData!: any[];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public checkValue($event: any): void {
+    this.newData = this.data.filter(
+      el => el.toLowerCase().includes($event.target.value)
+    )
   }
 
 }

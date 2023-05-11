@@ -1,3 +1,4 @@
+import { DirectivesModule } from './../../shared/directives/directives.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +12,8 @@ import { CreateCompanyComponent } from './create-company.component';
   ],
   imports: [
     CommonModule,
-    CreateCompanyRoutingModule
+    CreateCompanyRoutingModule,
+    DirectivesModule
   ]
 })
 export class CreateCompanyModule { }
